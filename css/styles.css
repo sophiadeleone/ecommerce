@@ -1,0 +1,607 @@
+* {
+    box-sizing: border-box;
+}
+
+p{font-family: "Outfit", sans-serif;}
+
+
+
+.nav-hom a{
+    font-weight: lighter;
+}
+
+a {
+    font-weight: bold;
+    text-decoration: none;}
+/**css para home **/
+
+.div-hom-elementos-accesorios{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.div-hom-elementos-ropamujer{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.div-hom-elementos-ropahombre{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.div-hom-elemento-accesorios {
+    padding: 10px 10px 20px 10px;
+    width: 20%;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.div-hom-elemento-accesorios p{
+    text-align: center;
+}
+
+.div-hom-elemento-ropamujer {
+    padding: 10px 10px 20px 10px;
+    width: 20%;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.div-hom-elemento-ropamujer p{
+    text-align: center;
+}
+
+.div-hom-elemento-ropahombre {
+    padding: 10px 10px 20px 10px;
+    width: 20%;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.div-hom-elemento-ropahomnbre p{
+    text-align: center;
+}
+
+.bot-hom-agregar {
+    padding:5px 1px 10px 1px;
+}
+
+li{
+   list-style-type:none;
+}
+
+.nav-hom {
+    display: flex;
+    background-color: #193551;
+}
+
+.nav-hom li{
+    padding: 8px;
+    align-self: center;
+}
+
+.nav-hom li a{
+    color: white;
+    font-size: 19px;
+    text-transform: uppercase;
+    font-family: "Outfit", sans-serif;
+    justify-content: center;
+}
+
+.logo{
+    width: 50px;
+}
+
+.nav-home li img{
+    padding: 0px;
+}
+
+.h2home{
+    background-color: #FFC8A1;
+}
+
+
+.bot-hom-agregar{
+    width: 55%;
+    font-size: 13px;
+    margin: 5px;
+    background-color: #a8c8e8;
+    color: white;
+    border: solid 1px  #435f7b;
+    border-radius: 30px;
+    padding: 8px;
+}
+
+.bot-hom-ver{
+    width: 55%;
+    font-size: 13px;
+    margin: 5px;
+    background-color: #a8c8e8;
+    color: white;
+    border: solid 1px  #435f7b;
+    border-radius: 30px;
+    padding: 8px;
+}
+
+.boton_comprar{
+    width: 55%;
+    font-size: 13px;
+    margin: 5px;
+    background-color: #a8c8e8;
+    color: white;
+    border: solid 1px  #435f7b;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    padding: 8px;
+}
+
+
+/**css para category**/
+
+
+.sec-cat {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.div-cat {
+    padding: 10px 10px 20px 10px;
+    width: 20%;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.div-cat p{
+    text-align: center;
+}
+
+.bot-cat-agregar{
+    width: 55%;
+    font-size: 13px;
+    margin: 5px;
+    background-color: #a8c8e8;
+    color: white;
+    border: solid 1px  #435f7b;
+    border-radius: 30px;
+    padding: 8px;
+}
+
+
+.bot-cat-ver{
+    width: 55%;
+    font-size: 13px;
+    margin: 5px;
+    background-color: #a8c8e8;
+    color: white;
+    border: solid 1px  #435f7b;
+    border-radius: 30px;
+    padding: 8px;
+}
+
+/**css para carrito**/ 
+
+.metpagos{
+    font-family: "Outfit", sans-serif;
+}
+.buzo_carrito {
+    width: 100%;
+}
+
+.vestido_carrito{
+    width: 100%;
+}
+
+.productos_carrito{
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.producto_carrito_1{
+    padding: 10px 10px 20px 10px;
+    width: 20%;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.producto_carrito_2{
+    padding: 10px 10px 20px 10px;
+    width: 20%;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.producto_carrito_1 p{
+    text-align: center;
+}
+
+.producto_carrito_2 p{
+    text-align: center;
+}
+
+.boton_comprar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: auto;
+    font-size: 13px;
+}
+
+.maincart{
+    min-height: 650px;
+}
+
+/**css register**/
+
+.form_bienvenida{
+    text-align: center;
+}
+.form_register{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 10px;
+}
+
+.form_register div{
+    padding: 10px;
+}
+
+.registrar{
+    text-align: center;
+}
+
+.form_register a{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 10px;
+}
+
+.regmain {
+    min-height: 650px;
+}
+
+/** css login **/
+
+.form_login{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 10px;
+}
+
+.form_login div{
+    padding: 10px;
+}
+
+.boton_login {
+    text-align: center;
+}
+
+.h1_login{
+    text-align: center;
+}
+
+.loglink {
+    text-align: center;
+}
+
+.logmain {
+    min-height: 650px;
+}
+
+/** footer**/
+
+footer{
+    background-color: #193551;
+    display: flex;
+    justify-content: center;
+}
+
+footer ul{
+    display:flex;
+    justify-content: space-around;
+}
+
+footer ul li{
+    color: white;
+    padding: 8px;
+    align-self: center;
+}
+
+/**recover**/
+.titulo{
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+}
+.todo {
+    width: 450px;
+    border: solid 4px white;
+    height: 350px;
+    margin:auto;
+    background-color: white;
+}
+.boton-submit {
+   width: 430px;
+   height: 40px;
+   font-size: 20px;
+   margin: 60px 50px 30px 10px;
+   background-color:#193551;
+   color: white;
+   border: solid 3px #193551; 
+}
+.para{
+    font-size: 20px;
+    text-align: center;
+}
+.preferencias {
+    font-size: 15px;
+    margin-left: 20px;
+    text-align: center;
+}
+.checkrec{
+    padding: 50px;
+}
+
+
+ 
+/**producto**/
+.container{
+    display: flex;
+    justify-content:center;
+}
+
+.body{
+    align-self: center;
+    width: 23%;
+}
+.image{
+    width: 70%;
+}
+
+.mainprod{
+    min-height: 880px;
+}
+
+.imagen {
+    display:flex;
+    
+}
+
+
+/**mediaquerys con CONFIGURACION EN INSPECCIONAR IPHONE 12 PRO**/
+
+@media (max-width: 390px){
+    .nav-hom{
+        flex-direction: column;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+
+    .sec-cat{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .div-hom-elementos-accesorios{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        text-align: center;
+        font-size: 18px;
+            
+    }
+
+    .div-hom-elementos-ropamujer{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        text-align: center;
+        font-size: 18px;
+        
+    }
+    .div-hom-elementos-ropahombre{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        text-align: center;
+        font-size: 18px;
+    }
+
+    .div-hom-elemento-accesorios{
+        align-self: flex-center;
+        width: 110%;
+    }
+    
+    .div-hom-elemento-ropamujer{
+        align-self: flex-center;
+        width: 110%;
+    }
+
+    .div-hom-elemento-ropahombre{
+        align-self: center;
+        width: 110%;
+    }
+
+    .div-hom-elemento-accesorios img{
+        width: 70%;
+    }
+     .div-hom-elemento-ropamujer img{
+        width: 70%;
+    }
+
+     .div-hom-elemento-ropavaron img{
+        width: 75%;
+    }
+
+     .div-hom-elemento-accesorios p{
+        font-size: 25px;
+        width: 80%;
+    }
+
+     .div-hom-elemento-ropamujer p{
+        font-size: 25px;
+        width: 80%;
+    }
+     .div-hom-elemento-ropahombre p{
+        font-size: 25px;
+        width: 80%;
+    }
+
+    footer ul li{
+        width: 90px;
+        text-align: center;
+    }
+
+    h1 {
+        text-align: center;
+    }
+
+    h2{
+        text-align: center;
+    }    
+
+    /**Category**/
+
+    .div-cat{
+        align-self: flex-center;
+        width: 100%;
+
+    }
+
+    .div-cat p{
+        font-size: 25px;
+        width: 80%;
+    }
+
+
+    /**carrito**/
+
+    .productos_carrito{
+        display: flex;
+        flex-direction: column;
+    
+    }
+
+    .producto_carrito_1{
+        align-self: flex-center;
+        width: 100%;
+    }
+
+    .producto_carrito_1 p{
+        font-size: 25px;
+        width: 80%;
+     }
+
+    .producto_carrito_2{
+        align-self: flex-center;
+        width: 100%;
+    }
+
+    .producto_carrito_2 p{
+        font-size: 25px;
+        width: 80%;
+    }
+
+    .logo{
+        width: 80px;
+    }
+
+    .container{
+        align-self: flex-center;
+        width: 100%;
+        font-size: 10px;
+        width: 80%;
+    
+    }
+
+    
+    /**Recover**/
+    .todo{
+        width: 80%;
+    }
+
+    .imput-group{
+        width: 40%;
+    }
+
+    .boton-submit{
+        width: 250%;
+    }
+
+    .enterorec{
+        align-self: center;
+    }
+
+    .container {
+        flex-direction: column;
+
+    
+    }
+    .mainprod{
+        justify-content: center;
+    }
+
+    .body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        width: 105%;
+        padding-left: 35%;
+
+    }
+    
+    .body p{
+        font-size: 20px;
+    }
+
+    .body h1{
+        font-size: 40px;
+    }
+
+    .body h2{
+        font-size: 30px;
+    }
+
+    .imagen{
+        padding-left: 28%;
+        width: 135%;
+    }
+
+    .metpagos{
+        text-align: center;
+    }
+
+
+
+
+
+
+
+
+
+}
