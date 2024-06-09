@@ -21,11 +21,11 @@ fetch(url)
         let categoria = document.querySelector('.descripcion_prod.categoria');
 
         //Paso 2 y 3: actualizar datos y actualizar DOM;
-        nombre.innerText = data.title;
+        nombre.innerText += data.title;
         descripcion.innerText += data.description;
-        precio.innerText = data.price;
-        image.src=data.image; //esta bien asi con .src o tiene que ser con .innerHTML?
-        categoria.innerText += data.category;      
+        precio.innerText += data.price;
+        image.src=data.image; 
+        categoria.innerText += data.category;    
 
     })
     .catch(function(error){
