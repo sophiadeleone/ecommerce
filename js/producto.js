@@ -26,7 +26,8 @@ fetch(url)
         precio.innerText += data.price;
         image.src=data.image; 
         categoria.innerText += data.category;    
-
+        localStorage.setItem("id", "data.id")
+        console.log(data.id)
     })
     .catch(function(error){
         console.log(error);

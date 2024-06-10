@@ -35,6 +35,8 @@ fetch(urlJew)
 
     console.log("index.js");
 
+
+
 //women s clothing 
 
 let urlWom= "https://fakestoreapi.com/products/category/women's%20clothing"
