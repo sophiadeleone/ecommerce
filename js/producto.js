@@ -1,10 +1,10 @@
 //Pasos para QS
 let qs = location.search; //Obtener la qs de la url aka "?clave=valor" en formato de cadena de texto
 let qsto = new URLSearchParams(qs); //Transformar la qs en un Objeto Literal
-let id = qsto.get('id'); //Obtener el dato de id del objeto literal
+let numId = qsto.get('id'); //Obtener el dato de id del objeto literal
 
 //Armar un nuevo fetch
-let url = `https://fakestoreapi.com/products/${id}`
+let url = `https://fakestoreapi.com/products/${numId}`
 
 fetch(url)
     .then(function(response){
@@ -26,9 +26,15 @@ fetch(url)
         precio.innerText += data.price;
         image.src=data.image; 
         categoria.innerText += data.category;    
-        localStorage.setItem("id", "data.id")
-        console.log(data.id)
+        localStorage.setItem("id", "numId")
+        //numId tiene el mismo valor que  data.id
+        console.log(numId)
     })
     .catch(function(error){
         console.log(error);
     })
+
+
+//Carrito
+
+//1) traigo ID
