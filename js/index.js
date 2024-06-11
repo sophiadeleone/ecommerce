@@ -11,7 +11,7 @@ fetch(urlJew)
         let info = data; //Array de datos que vino de la API
         //Paso1: capturar elemento del DOM
         let accesorios = document.querySelector('.accesorios');
-        let elementosJew = ''
+        let elementosJew = '';
 
         //Paso 2 bsucar los datos y actualizar el paso1
         for(let i=0; i<info.length; i++){

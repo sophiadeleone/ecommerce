@@ -26,7 +26,7 @@ fetch(url)
         precio.innerText += data.price;
         image.src=data.image; 
         categoria.innerText += data.category;    
-        localStorage.setItem("id", "numId")
+        localStorage.setItem("id", numId) //solo estoy almacenando el numero, no un objeto, entonces no necesito hacer lo de json.stringify()verdad???
         //numId tiene el mismo valor que  data.id
         console.log(numId)
     })
@@ -34,7 +34,3 @@ fetch(url)
         console.log(error);
     })
 
-
-//Carrito
-
-//1) traigo ID
