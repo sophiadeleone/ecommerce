@@ -43,22 +43,25 @@
 
             <div> 
                 <label>Email</label>
-                <input type="text" name="user email" value="">
+                <input id="mail" type="email" name="mail" value="" placeholder=" tu email">
+                <div class="emailEr"></div>
             </div>
 
             <div>
                 <label>Contraseña:</label>
-                <input type="text" name="contraseña" value="">
+                <input id="pass" type="password" name="pass" value="" placeholder="tu contraseña">
+                <div class="contrasenaEr"></div>
             </div>
 
             <div>
                 <label>Repetir contraseña:</label>
-                <input type="text" name="contraseña2" value="">
+                <input id="passDos" type="password" name="passDos" value="" placeholder="tu contraseña">
+                <div class="contrasenaDosEr"></div>
             </div>
 
             <div> 
                 <label>Acepto terminos y condiciones:</label>
-                <input type="radio" name="conditions" value="Acepto" checked>
+                <input id="conditions" type="checkbox" name="conditions" value="Acepto">
             </div>
 
             <div class="registrar">
@@ -81,6 +84,7 @@
         </ul>
     </footer>
 
+    <script src="./js/register.js"></script>
 
 </body>
 
