@@ -40,17 +40,19 @@ fetch(urlJew)
 //women s clothing 
 
 let urlWom= "https://fakestoreapi.com/products/category/women's%20clothing"
+//El espacio en Js se reemplaza por %20
 
-    fetch(urlWom)
-    .then(function(response){
-        return response.json();
+    fetch(urlWom) //Url de la API en categoria women's clothing
+    .then(function(response){ //recibe info obtenida por fetch
+        return response.json(); //decodifica la info y lo convierte en objeto literal
     })
-    .then(function(data){
-        console.log(data); //Mostrame por consola.
-        let infow = data; //Array de datos que vino de la API
+    .then(function(data){ //recibio mi info decodificada
+        console.log(data); //Muestro por consola.
+        let infow = data; //Array de datos que vinieron de la API
+        
         //Paso1: capturar elemento del DOM
         let women = document.querySelector('.women');
-        let elementosWom = ''
+        let elementosWom = '' //variable vacia para almacenar informacion del for
 
         //Paso 2 bsucar los datos y actualizar el paso1
         for(let i=0; i<infow.length; i++){

@@ -29,43 +29,41 @@
             </nav>
         </header>
         
-        <main class="maincart">
+    <main class="maincart">
 
-            <h1 class="carrito" >Carrito de compra</h1>
+        <h1 class="carrito" >Carrito de compra</h1>
 
-            <section class="productos_carrito">
+        <section class="productos_carrito">
 
-                <article class="producto_carrito_1">
-                    <img class="buzo_carrito" src="img/buzoostru1.jpg" alt="buzo ostu"></a>
-                    <p>buzo tipo hoodie blanco de ostu</p>
-                    <p> $26.000 </p>
-                </article>
+            <article class="producto_carrito_1">
+                <img class="buzo_carrito" src="img/buzoostru1.jpg" alt="buzo ostu"></a>
+                <p>buzo tipo hoodie blanco de ostu</p>
+                <p> $26.000 </p>
+            </article>
 
-                <article class="producto_carrito_2"> 
-                    <img class="vestido_carrito" src="img/vestidonegro4.jpg" alt="vestido negro">
-                    <p>vestido negro manga larga corto para la noche</p>
-                    <p>$18.000</p>
-                </article>        
+            <article class="producto_carrito_2"> 
+                <img class="vestido_carrito" src="img/vestidonegro4.jpg" alt="vestido negro">
+                <p>vestido negro manga larga corto para la noche</p>
+                <p>$18.000</p>
+            </article>        
 
-                <div class="metpagos">
-                    <p>Total de su compra: $30000</p>
-                    <ul>Metodos de pago:
-                        <li>Mercado Pago</li>
-                        <li>Transferencia</li>
-                        <li>Credito o debito</li>
-                        <li>Retira en nuestro local</li>
-                    </ul>
-                </div>
-        
-            </section>
-
-            <div>
-                <a class="boton_comprar" href="cart.html">comprar</a>
-            </div>    
-        
-
-        </main>
+            <div class="metpagos">
+                <p>Total de su compra: $30000</p>
+                <ul>Metodos de pago:
+                    <li>Mercado Pago</li>
+                    <li>Transferencia</li>
+                    <li>Credito o debito</li>
+                    <li>Retira en nuestro local</li>
+                </ul>
+            </div>
     
+        </section>
+
+        <div>
+            <a class="boton_comprar" href="cart.html">comprar</a>
+        </div>    
+
+    </main>
 
     <footer> 
         <ul>
@@ -75,7 +73,17 @@
         </ul>
     </footer>
 
-    <script src= "js/cart.js"></script>
-    </body>
-
 </html>
+
+//identifico el elemento del dom
+
+let agregar_cart = document.querySelector(".agrecarrito")
+
+//detecto el evento
+//uso la funcion nativa que se encarga de escuchar eventos
+
+agregar_cart.addEventListener('click' , function(){
+
+    console.log("hola")
+
+})

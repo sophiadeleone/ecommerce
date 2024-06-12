@@ -11,7 +11,7 @@ fetch(url)
         return response.json();
     })
     .then(function(data){
-        // console.log(data);
+        console.log(data);
 
         //Paso 1: capturar DOM.
         let nombre = document.querySelector('h2');
