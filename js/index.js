@@ -1,4 +1,4 @@
-console.log("index.js");
+//console.log("index.js");
 
 let urlJew= 'https://fakestoreapi.com/products/category/jewelery'
 
@@ -32,8 +32,6 @@ fetch(urlJew)
     .catch(function(error){
         console.log(error);
     })
-
-    console.log("index.js");
 
 
 
@@ -72,6 +70,43 @@ let urlWom= "https://fakestoreapi.com/products/category/women's%20clothing"
     })
     .catch(function(error){
         console.log(error);
+    });
+
+/// MEN S CLOTHING
+
+let urlMen= "https://fakestoreapi.com/products/category/men's%20clothing"
+//El espacio en Js se reemplaza por %20
+
+    fetch(urlMen) //Url de la API en categoria men's clothing
+    .then(function(response){ //recibe info obtenida por fetch
+        return response.json(); //decodifica la info y lo convierte en objeto literal
+    })
+    .then(function(data){ //recibio mi info decodificada
+        console.log(data); //Muestro por consola.
+        let infomen = data; //Array de datos que vinieron de la API
+        
+        //Paso1: capturar elemento del DOM
+        let men = document.querySelector('.men');
+        let elementosMen = '' //variable vacia para almacenar informacion del for
+
+        //Paso 2 bsucar los datos y actualizar el paso1
+        for(let i=0; i<infomen.length; i++){
+            elementosMen += `<article class="div-hom-elemento-accesorios">
+                                <img class="imghom" src=${infomen[i].image} alt="${infomen[i].id}">
+                                <p class="p_home" >Nombre: ${infomen[i].title}</p>
+                                <p class="p_home" >Descripcion: ${infomen[i].description}</p>
+                                <p>Precio: $ ${infomen[i].price}</p>
+                                <a class="bot-hom-ver" href="producto.html?id=${infomen[i].id}">Ver más</a>
+                            </article>`
+        }
+        console.log(elementosMen);
+
+        //Paso 3: reinviar datos actualizados al DOM
+        men.innerHTML = elementosMen;
+
+    })
+    .catch(function(error){
+        console.log(error);
     })
 
-    console.log("index.js");
+console.log("index.js");

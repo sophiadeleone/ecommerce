@@ -28,9 +28,11 @@ fetch(url)
         categoria.innerText += data.category;    
         localStorage.setItem("id", numId) //solo estoy almacenando el numero, no un objeto, entonces no necesito hacer lo de json.stringify()verdad???
         //numId tiene el mismo valor que  data.id
-        console.log(numId)
+        //console.log(numId)
     })
     .catch(function(error){
         console.log(error);
     })
+
+
 
