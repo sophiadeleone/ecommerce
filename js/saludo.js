@@ -12,10 +12,4 @@ if (recstorage_saludo !== null){
     let login = document.querySelector('.nav_login');
     login.style.display = 'none';
 
-
-
-//AGREGAR li
-
-}else{
-    console.log("no hay mail")
 }
