@@ -1,5 +1,5 @@
 let formulario = document.querySelector("form"); //caputro formulario
-let email=document.querySelector("#mail");
+let email = document.querySelector("#mail");
 let contrasena = document.querySelector("#pass");
 let contrasenaDos = document.querySelector("#passDos");
 
