@@ -1,7 +1,6 @@
 let formulario = document.querySelector("form"); //capturo el formulario de la pag login.html
 let email = document.querySelector("#mail"); 
 let contrasena = document.querySelector("#pass");
-
 formulario.addEventListener("submit", function(e) {
     e.preventDefault();  //aca detengo el comporamineto default del formulario q es enviarse
 
@@ -19,7 +18,7 @@ formulario.addEventListener("submit", function(e) {
         alert("La contraseña debe tener al menos 6 caracteres");
     }
     else {
-        localStorage.setItem("mail", mail) ; //aca guardo el email dell usuario en el locastorage
+        localStorage.setItem("mail", mail) ; //aca guardo el email dell usuario en el localstorage
         formulario.submit();// ya vi todas las condiciones anteriores y le avise si teneia errores.llego a este else pq no habian errores entc envio el forumlario. 
         window.location.href = "index.html"; //cn est redirige al usuario a la pag prinsipal q es index.html
     }
