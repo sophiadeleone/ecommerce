@@ -4,7 +4,7 @@ let contrasena = document.querySelector("#pass");
 let contrasenaDos = document.querySelector("#passDos");
 
 formulario.addEventListener("submit", function(e) {
-    e.preventDefault(); //detnego comportamiento defaut de form q es enviarse
+    e.preventDefa                          ult(); //detnego comportamiento defaut de form q es enviarse
     
     let mail = email.value; //aka lo que el usurario completo en el campo de email
     let contra = contrasena.value;

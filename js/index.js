@@ -20,7 +20,7 @@ fetch(urlJew)
                                 <p class="p_home" >Nombre: ${info[i].title}</p>
                                 <p class="p_home" >Descripcion: ${info[i].description}</p>
                                 <p>Precio: $ ${info[i].price}</p>
-                                <a class="bot-hom-ver" href="producto.html?id=${info[i].id}">Ver más</a>
+                                <a class="bot-hom-ver" href="producto.html?id=${info[i].id}">Ver mas</a>
                             </article>`
         }
         console.log(elementosJew);
@@ -73,3 +73,41 @@ let urlWom= "https://fakestoreapi.com/products/category/women's%20clothing"
     })
 
     console.log("index.js");
+
+    
+//women s clothing 
+
+let urlMen= "https://fakestoreapi.com/products/category/men's%20clothing"
+
+fetch(urlMen)
+.then(function(response){
+    return response.json();
+})
+.then(function(data){
+    console.log(data); //Mostrame por consola.
+    let infom = data; //Array de datos que vino de la API
+    //Paso1: capturar elemento del DOM
+    let men = document.querySelector('.men');
+    let elementosMen = ''
+
+    //Paso 2 bsucar los datos y actualizar el paso1
+    for(let i=0; i<infow.length; i++){
+        elementosMen += `<article class="div-hom-elemento-accesorios">
+                            <img class="imghom" src=${infow[i].image} alt="${infow[i].id}">
+                            <p class="p_home" >Nombre: ${infow[i].title}</p>
+                            <p class="p_home" >Descripcion: ${infow[i].description}</p>
+                            <p>Precio: $ ${infow[i].price}</p>
+                            <a class="bot-hom-ver" href="producto.html?id=${infow[i].id}">Ver más</a>
+                        </article>`
+    }
+    console.log(elementosWom);
+
+    //Paso 3: reinviar datos actualizados al DOM
+    men.innerHTML = elementosMen;
+
+})
+.catch(function(error){
+    console.log(error);
+})
+
+console.log("index.js");
