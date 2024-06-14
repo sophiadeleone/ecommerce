@@ -4,7 +4,6 @@ let contrasena = document.querySelector("#pass");
 formulario.addEventListener("submit", function(e) {
     e.preventDefault();  //aca detengo el comporamineto default del formulario q es enviarse
 
-    
     let mail = email.value; //esto m da lo q el usuario puso en los imputs
     let contra = contrasena.value; //same q arriba
 
