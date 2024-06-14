@@ -22,6 +22,8 @@ formulario.addEventListener("submit", function(e) {
         localStorage.setItem("mail", mail) ; //aca guardo el email dell usuario en el localstorage
         formulario.submit();// ya vi todas las condiciones anteriores y le avise si teneia errores.llego a este else pq no habian errores entc envio el forumlario. 
         window.location.href = "index.html"; //cn est redirige al usuario a la pag prinsipal q es index.html
+        let headerMail = document.querySelector(".nav-hom")
+        headerMail.innerHTML +=` <li> Bienvenido: ${mail} </li>`
     }
 
 });

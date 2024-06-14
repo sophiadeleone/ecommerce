@@ -37,8 +37,7 @@ fetch(url)
     })
 
 
-
-
+    
 // ACA EMPIEZA CARRITO. ARTUSI VICTORIA
 
 // 1 ) Array vacio 

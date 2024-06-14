@@ -50,11 +50,6 @@ if (recupero_stCarrito == null){
         })
 
     }
-
-
-
-
-
     
     
 }

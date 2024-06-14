@@ -109,4 +109,40 @@ let urlMen= "https://fakestoreapi.com/products/category/men's%20clothing"
         console.log(error);
     })
 
-console.log("index.js");
+
+/// ELECTRONICS
+
+let urlelec= "https://fakestoreapi.com/products/category/electronics"
+//El espacio en Js se reemplaza por %20
+
+    fetch(urlelec) //Url de la API en categoria men's clothing
+    .then(function(response){ //recibe info obtenida por fetch
+        return response.json(); //decodifica la info y lo convierte en objeto literal
+    })
+    .then(function(data){ //recibio mi info decodificada
+        console.log(data); //Muestro por consola.
+        let infoElec = data; //Array de datos que vinieron de la API
+        
+        //Paso1: capturar elemento del DOM
+        let electro = document.querySelector('.electro');
+        let elementosElec = '' //variable vacia para almacenar informacion del for
+
+        //Paso 2 bsucar los datos y actualizar el paso1
+        for(let i=0; i<infoElec.length; i++){
+            elementosElec += `<article class="div-hom-elemento-accesorios">
+                                <img class="imghom" src=${infoElec[i].image} alt="${infoElec[i].id}">
+                                <p class="p_home" >Nombre: ${infoElec[i].title}</p>
+                                <p class="p_home" >Descripcion: ${infoElec[i].description}</p>
+                                <p>Precio: $ ${infoElec[i].price}</p>
+                                <a class="bot-hom-ver" href="producto.html?id=${infoElec[i].id}">Ver más</a>
+                            </article>`
+        }
+        console.log(elementosElec);
+
+        //Paso 3: reinviar datos actualizados al DOM
+        electro.innerHTML = elementosElec;
+
+    })
+    .catch(function(error){
+        console.log(error);
+    })
