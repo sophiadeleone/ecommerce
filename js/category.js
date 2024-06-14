@@ -1,35 +1,35 @@
-let qs = location.search;
-let qsObj = new URLSearchParams(qs);
+let qsCat = location.search;
+let qsObj = new URLSearchParams(qsCat);
 let id = qsObj.get("id");
 let urlProductosCategory =`https://fakestoreapi.com/products/category/${id}`;
-console.log ("qs: ",qs);
+console.log ("qs: ",qsCat);
 console.log("qsObj: ", qsObj);
 console.log("id: ",id);
 
 
 // Obtener los productos de la categoría de la API
 fetch(urlProductosCategory)
-   .then(function(res) {
-       return res.json();
-   })
-   .then(function(products) {
-    products.forEach(function(product) {
-       // Iterar sobre cada producto y crear elementos en el DOM
-       
-           // Crear un elemento de producto en el DOM
-           const productElement = document.createElement('div');
-           productElement.innerHTML = `
-               <h3>${product.title}</h3>
-               <p>${product.description}</p>
-               <p>Precio: $${product.price}</p>
-               <button class="ver-mas" data-product-id="${product.id}">Ver más</button>
-           `;
-          
-
-           // Agregar el elemento de producto al DOM
-           document.body.appendChild(productElement);
-        });
+    .then(function(res) {
+        return res.json();
     })
+    .then(function(data) {
+    console.log(data); 
+    let divProdCat = document.querySelector (".category-products");
+    let elemProdCat = [];
+
+    for(let i=0; i<data.length; i++){
+        elemProdCat += `<article>
+                            <a href="href="producto.html?id=${data[i].id}"><img src=${data[i].image} alt="${data[i].id}"></a>
+                            <p>Nombre: ${data[i].title}</p>
+                            <p >Descripcion: ${data[i].description}</p>
+                            <p>Precio: $ ${data[i].price}</p>
+                            <a href="producto.html?id=${data[i].id}">Ver más</a>
+                        </article>`
+    }
+        divProdCat.innerHTML = elemProdCat;
+
+    })
+    
     .catch(function(error) {
         console.error('Error al obtener los productos:', error);
     });    
