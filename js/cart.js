@@ -12,7 +12,7 @@ let productos_carrito = ""
 //Creo condicion
 
 if (recupero_stCarrito == null){
-    let mensaje = "No tienes nada en el carrito. Aprovecha los descuentos de nuestra pagina!"
+    let mensaje = "No tienes nada en el carrito."
     let mensaje_vacio = document.querySelector(".mensajeCart")
     mensaje_vacio.innerText = mensaje
 

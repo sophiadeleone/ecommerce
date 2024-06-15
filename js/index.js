@@ -146,3 +146,25 @@ let urlelec= "https://fakestoreapi.com/products/category/electronics"
     .catch(function(error){
         console.log(error);
     })
+
+
+
+//INDEX DELFINA GERARDI (CODGIGO COMO COMENTARIO)
+
+//products.forEach(function(product) {
+    // Iterar sobre cada producto y crear elementos en el DOM
+
+        // Crear un elemento de producto en el DOM
+        //let productElement = document.createElement('div');
+        //productElement.innerHTML = `
+            //<h3>${product.title}</h3>
+            //<p>${product.description}</p>
+            //<p>Precio: $${product.price}</p>
+            //<button class="ver-mas" data-product-id="${product.id}">Ver más</button>
+        //`;
+        
+     //}
+
+        // Agregar el elemento de producto al DOM
+ //       document.body.appendChild(productElement);
+   //  });
