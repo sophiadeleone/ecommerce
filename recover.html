@@ -36,18 +36,22 @@
                 <form action="index.html" method="GET">
                     <div class="preferencias">
                         <div>
-                            <label for="contraseña">Introduzca su correo electrónico para recibir instruccciones para restablecer su contraseña:</label> <br>
-                            <input type="email" name="email" id="recuperar" placeholder="correo electrónico" /><br>
+                            <label for="mailRe">Introduzca su correo electrónico para recibir instruccciones para restablecer su contraseña:</label>
+                            <input id="mailRe" type="email" name="mailRe" value="" placeholder="correo electrónico">
+                            <div class="emailErRec"></div>
                         </div>
                         <div class="checkrec">
-                            <input type="checkbox" name="contraseña" value="" >
-                            <label for="checkbox"> Quiero recuperar mi contraseña</label>
+                            <input id="checkRec" type="checkbox" name="checkRec" value="recuperar" >
+                            <label for="checkRec"> Quiero recuperar mi contraseña</label>
+                            <div class="checkErRec"></div>
                         </div>
                     </div>
                     <div class="imput-group">
                         <button class="boton-submit" type="submit"> RECUPERAR</button>
                     </div>
                 </form>
+                <div class="todoOkInsturc"></div>
+                <div class="linkLog"></div>
             </div>
         </div>
         
