@@ -209,7 +209,9 @@ li{
     box-sizing: border-box;
     display: flex;
     flex-wrap: wrap;
+    
 }
+
 
 .producto_carrito_1{
     padding: 10px 10px 20px 10px;
@@ -604,4 +606,21 @@ footer ul li{
 
 
 
+}
+
+
+/**ARREGLO DE IMAGEN, PROBAR CON ESTE CODIGO CSS PARA SEGUIR ARREGLANDO IMAGEN**/
+
+img{
+    width: 50%;
+}
+
+
+/**LOGIN SALUDO**/
+li.saludo{
+    color: white;
+    font-size: 19px;
+    text-transform: uppercase;
+    font-family: "Outfit", sans-serif;
+    font-weight: lighter
 }
