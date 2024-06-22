@@ -11,12 +11,8 @@ let productos_carrito = ""
 
 //Creo condicion
 
-if (recupero_stCarrito == null){
-    let mensaje = "No tienes nada en el carrito."
-    let mensaje_vacio = document.querySelector(".mensajeCart")
-    mensaje_vacio.innerText = mensaje
-
-} else{
+if (recupero_stCarrito !== null){
+    
     carrito = [];
     let recuperar_strparse = JSON.parse(recupero_stCarrito)
     carrito = recuperar_strparse
@@ -50,6 +46,19 @@ if (recupero_stCarrito == null){
         })
 
     }
-    
+    let finalizarCompra = document.querySelector(".boton_comprar")
+
+    finalizarCompra.addEventListener("click", function(){
+        localStorage.clear(); 
+        alert("gracias por su compra");
+        
+    })
+
+} else{
+    let mensaje = "No tienes nada en el carrito."
+    let mensaje_vacio = document.querySelector(".mensajeCart")
+    mensaje_vacio.innerText = mensaje
     
 }
+
+

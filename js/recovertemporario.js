@@ -10,8 +10,6 @@ document.querySelector(".checkErRec").innerText = "";
 document.querySelector(".todoOkInsturc").innerText = "";
 document.querySelector(".linkLog").innerHTML = ""; //PREGUNTAR lo dejo como str vacion?
 
-let submited = false/*por afuera del addEventListener*/ 
-
 formulario.addEventListener("submit", function(e) {
     e.preventDefault(); //detnego comportamiento defaut de form 
     
@@ -22,14 +20,9 @@ formulario.addEventListener("submit", function(e) {
     }else if (!checkRec.checked){ //aca estoy diciendo si el checkboox no esta marcsado
         document.querySelector(".checkErRec").innerText = "Por favor acepte el campo Quiero recuperar mi contraseña";
     }else {
+        todoOkInsturc.innerText = "Recibirás un email con las instrucciones para recuperar tu contraseña";
+        linkLog.innerHTML = '<a href="./login.html">Ir al login.</a>';
         formulario.submit();
-        let submited = true
-        if (submited) { // no hace falta pner sumbmited == truee
-            todoOkInsturc.innerText = "Recibirás un email con las instrucciones para recuperar tu contraseña";
-            linkLog.innerHTML = '<a href="./login.html">Ir al login.</a>';
-        }
       
     }
 });
-
-

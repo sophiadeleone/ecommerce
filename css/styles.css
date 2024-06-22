@@ -224,7 +224,6 @@ li{
     width: 55%;
     font-size: 13px;
     margin: 5px;
-    background-color: #a8c8e8;
     color: white;
     border: solid 1px  #435f7b;
     border-radius: 30px;
@@ -235,7 +234,7 @@ li{
     width: 55%;
     font-size: 13px;
     margin: 5px;
-    background-color: #a8c8e8;
+    background-color: #193551;
     color: white;
     border: solid 1px  #435f7b;
     border-radius: 30px;
@@ -243,7 +242,6 @@ li{
     align-items: center;
     padding: 8px;
 }
-
 
 /**css para category**/
 
@@ -331,13 +329,6 @@ li{
 }
 
 
-
-
-
-
-
-
-
 .metpagos{
     font-family: "Outfit", sans-serif;
 }
@@ -413,7 +404,7 @@ li{
 }
 
 .logmain {
-    min-height: 650px;
+    min-height: 550px;
 }
 
 /** footer**/
@@ -436,6 +427,7 @@ footer ul li{
 }
 
 /**recover**/
+
 .titulo{
     font-family: 'Times New Roman', Times, serif;
     text-align: center;
@@ -468,8 +460,6 @@ footer ul li{
 .checkrec{
     padding: 50px;
 }
-
-
  
 /**producto**/
 .container{
@@ -482,18 +472,35 @@ footer ul li{
     width: 23%;
 }
 .image{
-    width: 70%;
+    max-width: 100%;
+    
 }
 
 .mainprod{
     min-height: 880px;
 }
 
-.imagen {
-    display:flex;
-    
+.imagen{
+    padding : 0px;
 }
 
+.descripcion_prod {
+    margin: 10px 0;
+}
+
+.descripcion_prod.categoria {
+
+}
+
+.descripcion_prod.agrecarrito {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 15px;
+    background-color: #193551;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
 
 /**mediaquerys con CONFIGURACION EN INSPECCIONAR IPHONE 12 PRO**/
 
@@ -503,6 +510,79 @@ footer ul li{
         flex-wrap: wrap;
         flex-direction: column;
     }
+
+    /**css para responsive home **/
+
+    /**ACCESORIOS  HOME RESPONSIVE*/
+    .accesorios {
+
+        flex-direction: column;
+    }
+
+    .accesorios article {
+        
+        width: 100%;
+    }
+    
+    .accesorios a {
+        width: 23%;
+        padding: 5px 15px;
+        
+    }
+
+    /**WOMEN HOME RESPONSIVE*/
+    .women {
+
+        flex-direction: column;
+    }
+
+    .women article {
+        
+        width: 100%;
+    }
+    
+    .women a {
+        width: 23%;
+        padding: 5px 15px;
+        
+    }
+    
+
+    /**MEN HOME RESPONSIVE**/
+    
+    .men {
+        flex-direction: column;
+    }
+
+    .men article {
+        
+        width: 100%;
+    }
+    
+    .men a {
+        width: 23%;
+        padding: 5px 15px;
+        
+    }
+
+  
+    /*ELECTRONICS HOME RESPONSIVE*/
+    .electro {
+        flex-direction: column;
+    }
+
+    .electro article {
+        
+        width: 100%;
+    }
+    
+    .electro a {
+        width: 23%;
+        padding: 5px 15px;
+        
+    }
+    
+    /*
 
 
     .sec-cat{
@@ -576,7 +656,7 @@ footer ul li{
         font-size: 25px;
         width: 80%;
     }
-
+    */
     footer ul li{
         width: 90px;
         text-align: center;
@@ -590,8 +670,42 @@ footer ul li{
         text-align: center;
     }    
 
-    /**Category**/
 
+    /*CATEGORY RESPONSIVE*/
+    .category-products {
+        flex-direction: column;
+    }
+
+    .category-products article {
+        
+        width: 100%;
+    }
+    
+    .category-products a {
+        width: 23%;
+        padding: 5px 15px;
+        
+    }
+
+    .verMasCat{
+        width: 55%;
+        font-size: 13px;
+        margin: 5px;
+        color: white;
+        border: solid 1px  #435f7b;
+        border-radius: 10px;
+        padding: 8px;
+    }
+
+    /*
+    .cat {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: center;
+    }
+
+   
     .div-cat{
         align-self: flex-center;
         width: 100%;
@@ -602,7 +716,7 @@ footer ul li{
         font-size: 25px;
         width: 80%;
     }
-
+    */
 
     /**carrito**/
 
