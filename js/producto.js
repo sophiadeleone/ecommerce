@@ -66,7 +66,7 @@ cartboton.addEventListener('click', function(e){
     //trabajo con cadenas de texto en formato json. Para eso aplico la propiedad .stringify
     carrito.push(numId)
 
-    //Convertir carrito a JSON antes de guardarlo en el local storage
+    //Convertir carrito a JSON antes de guardarloo en el local storage
     let carritoJSON = JSON.stringify(carrito) //mi array con los ID seleccionados
     localStorage.setItem('numId' , carritoJSON)
 

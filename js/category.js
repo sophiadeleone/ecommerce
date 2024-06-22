@@ -23,7 +23,7 @@ fetch(urlProductosCategory)
                             <p>Nombre: ${data[i].title}</p>
                             <p >Descripcion: ${data[i].description}</p>
                             <p>Precio: $ ${data[i].price}</p>
-                            <a href="producto.html?id=${data[i].id}">Ver más</a>
+                            <a class="verMasCat" href="producto.html?id=${data[i].id}">Ver más</a>
                         </article>`
     }
         divProdCat.innerHTML = elemProdCat;

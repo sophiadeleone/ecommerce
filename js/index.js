@@ -62,7 +62,7 @@ let urlWom= "https://fakestoreapi.com/products/category/women's%20clothing"
                                 <a class="bot-hom-ver" href="producto.html?id=${infow[i].id}">Ver más</a>
                             </article>`
         }
-        console.log(elementosWom);
+        //console.log(elementosWom);
 
         //Paso 3: reinviar datos actualizados al DOM
         women.innerHTML = elementosWom;
@@ -99,7 +99,7 @@ let urlMen= "https://fakestoreapi.com/products/category/men's%20clothing"
                                 <a class="bot-hom-ver" href="producto.html?id=${infomen[i].id}">Ver más</a>
                             </article>`
         }
-        console.log(elementosMen);
+        //console.log(elementosMen);
 
         //Paso 3: reinviar datos actualizados al DOM
         men.innerHTML = elementosMen;
@@ -137,7 +137,7 @@ let urlelec= "https://fakestoreapi.com/products/category/electronics"
                                 <a class="bot-hom-ver" href="producto.html?id=${infoElec[i].id}">Ver más</a>
                             </article>`
         }
-        console.log(elementosElec);
+        //console.log(elementosElec);
 
         //Paso 3: reinviar datos actualizados al DOM
         electro.innerHTML = elementosElec;

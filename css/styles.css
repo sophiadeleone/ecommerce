@@ -15,62 +15,160 @@ a {
     text-decoration: none;}
 /**css para home **/
 
-.div-hom-elementos-accesorios{
+/**ACCESORIOS  HOME*/
+.accesorios {
     display: flex;
     flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.accesorios article {
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 20%;
     text-align: center;
 }
 
-.div-hom-elementos-ropamujer{
+
+.accesorios img {
+    max-width: 100%;
+    height: auto;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 15px;
+}
+
+.accesorios p {
+    margin: 10px 0;
+}
+
+.accesorios a {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 15px;
+    background-color: #193551;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+/**WOMEN HOME*/
+.women {
     display: flex;
     flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.women article {
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 20%;
     text-align: center;
 }
 
-.div-hom-elementos-ropahombre{
+
+.women img {
+    max-width: 100%;
+    height: auto;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 15px;
+}
+
+.women p {
+    margin: 10px 0;
+}
+
+.women a {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 15px;
+    background-color: #193551;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+/**MEN HOME**/
+
+.men {
     display: flex;
     flex-wrap: wrap;
-    text-align: center;
-}
-
-.div-hom-elemento-accesorios {
-    padding: 10px 10px 20px 10px;
-    width: 20%;
+    gap: 20px;
     justify-content: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
 }
 
-.div-hom-elemento-accesorios p{
-    text-align: center;
-}
-
-.div-hom-elemento-ropamujer {
-    padding: 10px 10px 20px 10px;
+.men article {
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
     width: 20%;
-    justify-content: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.div-hom-elemento-ropamujer p{
     text-align: center;
 }
 
-.div-hom-elemento-ropahombre {
-    padding: 10px 10px 20px 10px;
+
+.men img {
+    max-width: 100%;
+    height: auto;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 15px;
+}
+
+.men p {
+    margin: 10px 0;
+}
+
+.men a {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 15px;
+    background-color: #193551;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+/*ELECTRONICS HOME*/
+.electro {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.electro article {
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
     width: 20%;
-    justify-content: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.div-hom-elemento-ropahomnbre p{
     text-align: center;
 }
+
+
+.electro img {
+    max-width: 100%;
+    height: auto;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 15px;
+}
+
+.electro p {
+    margin: 10px 0;
+}
+
+.electro a {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 15px;
+    background-color: #193551;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+
 
 .bot-hom-agregar {
     padding:5px 1px 10px 1px;
@@ -157,15 +255,12 @@ li{
 }
 
 .category-products article {
-    border: 1px solid #ccc;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     padding: 20px;
-    width: 250px;
+    width: 20%;
     text-align: center;
-    transition: transform 0.3s ease;
 }
-
 
 .category-products img {
     max-width: 100%;
@@ -178,31 +273,56 @@ li{
     margin: 10px 0;
 }
 
-.category-products a {
+.verMasCat {
     display: inline-block;
     margin-top: 10px;
     padding: 10px 15px;
-    background-color: #007BFF;
+    background-color: #193551;
     color: white;
     text-decoration: none;
     border-radius: 5px;
-    transition: background-color 0.3s ease;
 }
 
 
 /**css para carrito**/ 
 
-.metpagos{
-    font-family: "Outfit", sans-serif;
-}
-.buzo_carrito {
-    width: 100%;
+
+.productos_carrito {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
 }
 
-.vestido_carrito{
-    width: 100%;
+.productos_carrito article {
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 20%;
+    text-align: center;
 }
 
+
+.productos_carrito img {
+    max-width: 100%;
+    height: auto;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 15px;
+}
+
+.productos_carrito p {
+    margin: 10px 0;
+}
+
+.productos_carrito {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 15px;
+    /*background-color: #193551;*/
+    color: black;
+    text-decoration: none;
+    border-radius: 5px;
+}
 .productos_carrito{
     box-sizing: border-box;
     display: flex;
@@ -211,31 +331,17 @@ li{
 }
 
 
-.producto_carrito_1{
-    padding: 10px 10px 20px 10px;
-    width: 20%;
-    justify-content: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+
+
+
+
+
+
+
+.metpagos{
+    font-family: "Outfit", sans-serif;
 }
 
-.producto_carrito_2{
-    padding: 10px 10px 20px 10px;
-    width: 20%;
-    justify-content: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.producto_carrito_1 p{
-    text-align: center;
-}
-
-.producto_carrito_2 p{
-    text-align: center;
-}
 
 .boton_comprar {
     display: flex;
@@ -248,6 +354,7 @@ li{
 .maincart{
     min-height: 650px;
 }
+
 
 /**css register**/
 

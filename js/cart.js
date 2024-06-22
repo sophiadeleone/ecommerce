@@ -34,7 +34,7 @@ if (recupero_stCarrito == null){
 
         .then(function(data){
             console.log(data)
-            productos_carrito += `<article class="productos_carrito">
+            productos_carrito += `<article>
                                     <img src=${data.image} alt="${data.id}">
                                     <p >Nombre: ${data.title}</p>
                                     <p>Descripcion: ${data.description}</p>
