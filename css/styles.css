@@ -378,7 +378,23 @@ li{
     min-height: 650px;
 }
 
+.registrar button{
+    height: 35px;
+    font-size: 20px;
+    background-color: #193551;
+    color: white;
+    border: solid 3px #193551;
+}
+
 /** css login **/
+
+.boton_login button{
+    height: 35px;
+    font-size: 20px;
+    background-color: #193551;
+    color: white;
+    border: solid 3px #193551;
+}
 
 .form_login{
     display: flex;
@@ -406,6 +422,25 @@ li{
 .logmain {
     min-height: 550px;
 }
+
+.loglink a {
+    font-size: 15px;
+    margin: 5px;
+    color: #193551;
+    padding: 8px;
+    font-weight: 420;
+}
+
+.yaTengoCuenta {
+    font-size: 15px;
+    margin: 5px;
+    color: #193551;
+    padding: 8px;
+    font-weight: 420;
+}
+
+
+
 
 /** footer**/
 

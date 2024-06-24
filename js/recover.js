@@ -4,15 +4,16 @@ let checkRec = document.querySelector("#checkRec");
 let todoOkInsturc= document.querySelector(".todoOkInsturc");
 let linkLog= document.querySelector(".linkLog");
 
-//no quiero que tenga mensajes en el div de errores previos, asi que al principio le digo que sea un str vacio
-document.querySelector(".emailErRec").innerText = "";
-document.querySelector(".checkErRec").innerText = "";
+
 document.querySelector(".todoOkInsturc").innerText = "";
 document.querySelector(".linkLog").innerHTML = ""; //PREGUNTAR lo dejo como str vacion?
 
 
 formulario.addEventListener("submit", function(e) {
     e.preventDefault(); //detnego comportamiento defaut de form 
+    //no quiero que tenga mensajes en el div de errores previos, asi que al principio le digo que sea un str vacio
+    document.querySelector(".emailErRec").innerText = "";
+    document.querySelector(".checkErRec").innerText = "";
     
     let mailRec = emailRec.value; //aka lo que el usurario completo en el campo de email
 
