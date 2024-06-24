@@ -465,6 +465,7 @@ footer ul li{
 .container{
     display: flex;
     justify-content:center;
+    align-items: center;
 }
 
 .body{
@@ -473,7 +474,7 @@ footer ul li{
 }
 .image{
     max-width: 100%;
-    
+    height: auto; /*double check q la imagen mantenga sus proporciones*/
 }
 
 .mainprod{
@@ -481,7 +482,11 @@ footer ul li{
 }
 
 .imagen{
+    width: 50%;
     padding : 0px;
+    display : flex;
+    align-items : center; /*centra img verticalmmente*/
+    justify-content : center; /*centra img horzontalmente*/
 }
 
 .descripcion_prod {
@@ -489,7 +494,7 @@ footer ul li{
 }
 
 .descripcion_prod.categoria {
-
+ /*recordar borrar si no lo termino usando*/
 }
 
 .descripcion_prod.agrecarrito {
