@@ -20,14 +20,16 @@ fetch(url)
         let descripcion = document.querySelector('.descripcion_prod.descripcion');
         let precio = document.querySelector('.descripcion_prod.precio');
         let image = document.querySelector('.image');
-        let categoria = document.querySelector('.descripcion_prod.categoria');
+        let categoriaProd = document.querySelector('.descripcion_prod.categoria');
 
         //Paso 2 y 3: actualizar datos y actualizar DOM;
         nombre.innerText += data.title;
         descripcion.innerText += data.description;
         precio.innerText += data.price;
         image.src=data.image; 
-        categoria.innerText += data.category;    
+        categoriaProd.innerText += data.category; 
+        categoriaProd.href = `category.html?id=${data.category}`;
+        console.log(data.category);
         localStorage.setItem("id", numId) //solo estoy almacenando el numero, no un objeto, entonces no necesito hacer lo de json.stringify()verdad???
         //numId tiene el mismo valor que  data.id
         //console.log(numId)

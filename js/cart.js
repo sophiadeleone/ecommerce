@@ -35,7 +35,7 @@ if (recupero_stCarrito !== null){
                                     <p >Nombre: ${data.title}</p>
                                     <p>Descripcion: ${data.description}</p>
                                     <p>Precio: $ ${data.price}</p>
-                                    <a href="producto.html?id=${data.id}">Ver más</a>
+                                    <a class=verMasCarri href="producto.html?id=${data.id}">Ver más</a>
                                  </article>`
             
                                  lista_dom.innerHTML= productos_carrito

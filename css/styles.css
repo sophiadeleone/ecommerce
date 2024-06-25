@@ -14,6 +14,8 @@ a {
     font-weight: bold;
     text-decoration: none;}
 
+
+
 /**css para home **/
 
 .bot-hom-agregar {
@@ -283,6 +285,15 @@ li{
 
 /**css para carrito**/ 
 
+.verMasCarri {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 15px;
+    background-color: #193551;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
 
 .productos_carrito {
     display: flex;
@@ -502,7 +513,7 @@ footer ul li{
     width: 23%;
 }
 .image{
-    max-width: 100%;
+    max-width: 80%;
     height: auto; /*double check q la imagen mantenga sus proporciones*/
 }
 
@@ -542,7 +553,18 @@ footer ul li{
     padding: 8px 8px 8px 0px;
     font-weight: 420;
 }
-    
+
+/**LOGIN SALUDO**/
+li.saludo{
+    color: white;
+    font-size: 19px;
+    text-transform: uppercase;
+    font-family: "Outfit", sans-serif;
+    font-weight: lighter
+}
+
+
+
 
 /**mediaquerys con CONFIGURACION EN INSPECCIONAR IPHONE 12 PRO**/
 
@@ -701,22 +723,8 @@ footer ul li{
 
     h2{
         text-align: center;
-    }   
+    }  
 
-    /**ARREGLO DE IMAGEN, PROBAR CON ESTE CODIGO CSS PARA SEGUIR ARREGLANDO IMAGEN**/
-
-    img{
-        width: 50%;
-    }
-
-    /**LOGIN SALUDO**/
-    li.saludo{
-        color: white;
-        font-size: 19px;
-        text-transform: uppercase;
-        font-family: "Outfit", sans-serif;
-        font-weight: lighter
-    }
 
     /*CATEGORY RESPONSIVE*/
     .category-products {
