@@ -15,7 +15,86 @@ a {
     text-decoration: none;}
 /**css para home **/
 
+
+
+
+
+.bot-hom-agregar {
+    padding:5px 1px 10px 1px;
+}
+
+li{
+   list-style-type:none;
+}
+
+.nav-hom {
+    display: flex;
+    background-color: #193551;
+}
+
+.nav-hom li{
+    padding: 8px;
+    align-self: center;
+}
+
+.nav-hom li a{
+    color: white;
+    font-size: 19px;
+    text-transform: uppercase;
+    font-family: "Outfit", sans-serif;
+    justify-content: center;
+}
+
+.logo{
+    width: 50px;
+}
+
+.nav-home li img{
+    padding: 0px;
+}
+
+.h2home{
+    background-color: #a8c8e8
+}
+
+
+.bot-hom-agregar{
+    width: 55%;
+    font-size: 13px;
+    margin: 5px;
+    background-color: #a8c8e8;
+    color: white;
+    border: solid 1px  #435f7b;
+    border-radius: 30px;
+    padding: 8px;
+}
+
+.bot-hom-ver{
+    width: 55%;
+    font-size: 13px;
+    margin: 5px;
+    color: white;
+    border: solid 1px  #435f7b;
+    border-radius: 30px;
+    padding: 8px;
+}
+
+.boton_comprar{
+    width: 55%;
+    font-size: 13px;
+    margin: 5px;
+    background-color: #193551;
+    color: white;
+    border: solid 1px  #435f7b;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    padding: 8px;
+}
+
+
 /**ACCESORIOS  HOME*/
+
 .accesorios {
     display: flex;
     flex-wrap: wrap;
@@ -30,7 +109,6 @@ a {
     width: 20%;
     text-align: center;
 }
-
 
 .accesorios img {
     max-width: 100%;
@@ -54,6 +132,7 @@ a {
 }
 
 /**WOMEN HOME*/
+
 .women {
     display: flex;
     flex-wrap: wrap;
@@ -68,7 +147,6 @@ a {
     width: 20%;
     text-align: center;
 }
-
 
 .women img {
     max-width: 100%;
@@ -108,7 +186,6 @@ a {
     text-align: center;
 }
 
-
 .men img {
     max-width: 100%;
     height: auto;
@@ -131,6 +208,7 @@ a {
 }
 
 /*ELECTRONICS HOME*/
+
 .electro {
     display: flex;
     flex-wrap: wrap;
@@ -145,7 +223,6 @@ a {
     width: 20%;
     text-align: center;
 }
-
 
 .electro img {
     max-width: 100%;
@@ -166,81 +243,6 @@ a {
     color: white;
     text-decoration: none;
     border-radius: 5px;
-}
-
-
-
-.bot-hom-agregar {
-    padding:5px 1px 10px 1px;
-}
-
-li{
-   list-style-type:none;
-}
-
-.nav-hom {
-    display: flex;
-    background-color: #193551;
-}
-
-.nav-hom li{
-    padding: 8px;
-    align-self: center;
-}
-
-.nav-hom li a{
-    color: white;
-    font-size: 19px;
-    text-transform: uppercase;
-    font-family: "Outfit", sans-serif;
-    justify-content: center;
-}
-
-.logo{
-    width: 50px;
-}
-
-.nav-home li img{
-    padding: 0px;
-}
-
-.h2home{
-    background-color: #FFC8A1;
-}
-
-
-.bot-hom-agregar{
-    width: 55%;
-    font-size: 13px;
-    margin: 5px;
-    background-color: #a8c8e8;
-    color: white;
-    border: solid 1px  #435f7b;
-    border-radius: 30px;
-    padding: 8px;
-}
-
-.bot-hom-ver{
-    width: 55%;
-    font-size: 13px;
-    margin: 5px;
-    color: white;
-    border: solid 1px  #435f7b;
-    border-radius: 30px;
-    padding: 8px;
-}
-
-.boton_comprar{
-    width: 55%;
-    font-size: 13px;
-    margin: 5px;
-    background-color: #193551;
-    color: white;
-    border: solid 1px  #435f7b;
-    border-radius: 30px;
-    display: flex;
-    align-items: center;
-    padding: 8px;
 }
 
 /**css para category**/
@@ -328,7 +330,6 @@ li{
     
 }
 
-
 .metpagos{
     font-family: "Outfit", sans-serif;
 }
@@ -345,7 +346,6 @@ li{
 .maincart{
     min-height: 650px;
 }
-
 
 /**css register**/
 
@@ -438,9 +438,6 @@ li{
     padding: 8px;
     font-weight: 420;
 }
-
-
-
 
 /** footer**/
 
@@ -542,6 +539,14 @@ footer ul li{
     border-radius: 5px;
 }
 
+.descripcion_prod.categoria{
+    font-size: 15px;
+    color: #193551;
+    padding: 8px 8px 8px 0px;
+    font-weight: 420;
+}
+    
+
 /**mediaquerys con CONFIGURACION EN INSPECCIONAR IPHONE 12 PRO**/
 
 @media (max-width: 390px){
@@ -604,7 +609,6 @@ footer ul li{
         padding: 5px 15px;
         
     }
-
   
     /*ELECTRONICS HOME RESPONSIVE*/
     .electro {
@@ -622,8 +626,7 @@ footer ul li{
         
     }
     
-    /*
-
+    /* 
 
     .sec-cat{
         display: flex;
@@ -697,6 +700,7 @@ footer ul li{
         width: 80%;
     }
     */
+
     footer ul li{
         width: 90px;
         text-align: center;
